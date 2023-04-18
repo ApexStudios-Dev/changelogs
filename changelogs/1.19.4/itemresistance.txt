@@ -1,9 +1,0 @@
-1.19.4/master Changelog
-v13.0
-=====
- - v13.0.2 Optimized imports
- - v13.0.1 Fix build script typo causing publishing to fail
- - v13.0.0 Initial port to 1.19.4
-           Bump Forge version - v45.0.1
-           Bump Commonality version - v6.0.0
-
