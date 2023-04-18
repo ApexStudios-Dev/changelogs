@@ -213,12 +213,16 @@ public class ChangeLogServer extends NanoHTTPD {
         if (!Files.exists(file)) {
             return newFixedLengthResponse(NOT_FOUND, null, null);
         }
-        return newFixedLengthResponse(OK, "tex/plain", Files.newInputStream(file), Files.size(file));
+        return newFixedLengthResponse(OK, "text/plain", Files.newInputStream(file), Files.size(file));
     }
 
     private Response putResponse(IHTTPSession session, String mod, String version) throws Throwable {
         if (!secret.equals(session.getHeaders().get("x-api-key"))) {
             return newFixedLengthResponse(UNAUTHORIZED, null, null);
+        }
+
+        if(version == null || version.isBlank()) {
+            return newFixedLengthResponse(BAD_REQUEST, null, null);
         }
 
         Path file = dir.resolve(mod).resolve(version + ".txt");
