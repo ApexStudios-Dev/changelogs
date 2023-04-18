@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+group 'xyz.apex.changelogs'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-jul:2.20.0'
+
+    implementation 'net.sf.jopt-simple:jopt-simple:5.0.4'
+
+    implementation 'com.google.guava:guava:31.1-jre'
+
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'
+
+    compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
+    compileOnly 'org.jetbrains:annotations:24.0.1'
+
+    implementation('org.apache.maven:maven-artifact:3.8.4') {
+        exclude group: 'org.codehaus.plexus' // Not needed for this application.
+    }
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar.enabled false
+assemble.dependsOn shadowJar
+shadowJar {
+    configurations = [project.configurations.runtimeClasspath]
+
+    classifier ''
+    manifest {
+        attributes 'Main-Class': "${project.group}.ChangeLogServer"
+        attributes 'Multi-Release': "true"
+    }
+}
