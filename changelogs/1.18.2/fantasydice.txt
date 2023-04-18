@@ -1,0 +1,11 @@
+1.18.2 Changelog
+v4.8
+====
+ - v4.8.6 Add gradle task to send changelog to discord via webhook
+ - v4.8.5 Fix issues with changelog generation & mod publications
+ - v4.8.4 Fix issues with mod publications
+ - v4.8.3 Change to use Forges GradleUtils for Changelog generation
+ - v4.8.2 Add dependencies to mod publication
+ - v4.8.1 Add temp gradle changelog generation & mod publications
+ - v4.8.0 Delete old legacy git action files
+

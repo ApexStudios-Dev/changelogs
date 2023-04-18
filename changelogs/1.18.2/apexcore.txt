@@ -1,0 +1,10 @@
+1.18.2 Changelog
+v4.14
+=====
+ - v4.14.5 Fix issues with changelog generation & mod publications
+ - v4.14.4 Fix issues with mod publications
+ - v4.14.3 Change to use Forges GradleUtils for Changelog generation
+ - v4.14.2 Add dependencies to mod publication
+ - v4.14.1 Add temp gradle changelog generation & mod publications
+ - v4.14.0 Delete old legacy git action files
+
