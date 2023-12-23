@@ -1,0 +1,56 @@
+v16.1
+=====
+ - v16.1.1 Bump ApexCore version
+ - v16.1.0 Mark mod for public release
+
+v16.0
+=====
+ - v16.0.12 Mark ModPublishPlugin as using latest 0.3 version (0.3.+)
+ - v16.0.11 Fix issues with dependency id references
+ - v16.0.10 Fix not marking ApexCore as embedded dependency
+ - v16.0.9  Test publishing to dummy projects
+ - v16.0.8  Delete old legacy Jenkinsfile
+ - v16.0.7  Migrate old NeoForge support to being for MinecraftForge
+ - v16.0.6  Initial 1.20.2 bump
+ - v16.0.5  Update to 23w35a
+ - v16.0.4  Update to use mixin extras
+ - v16.0.3  Update Jenkinsfile
+ - v16.0.2  Remove snapshot publishing as it wasn't working as intended
+ - v16.0.1  Cleanup gradle scripts and update to match ApexCore changes
+ - v16.0.0  Port to 23w32a
+
+v15.0
+=====
+ - v15.0.8 Improve Fabric version range
+ - v15.0.7 Shorten snapshot version number
+ - v15.0.6 Update to use snapshot variant of ApexCore
+ - v15.0.5 Remove attempt to use Jenkins BuilderBlocker plugin
+           As it does not seem to work in Jenkinsfile?
+ - v15.0.4 Add release & snapshot publications
+ - v15.0.3 Publish snapshot builds to maven
+           Improve Fabric version range
+           Update Jenkinsfile to wait for ApexCore to finish (if building)
+ - v15.0.2 Fix using incorrect version format in gradle.properties
+ - v15.0.1 Setup Mod publication using Jenkins
+ - v15.0.0 Initial port to 1.20.2 (23w31a)
+
+v14.0
+=====
+ - v14.0.2 Remove old legacy source files.
+ - v14.0.1 Initial port to multi-loader.
+           Fix using incorrect mod version.
+ - v14.0.0 Clear out old source files.
+           Add dummy multi-loader project.
+
+v13.0
+=====
+ - v13.0.6 Add task to publish changelog to our updates server
+           Update discord notifier to remove changelog, replaced with link to external site
+ - v13.0.5 Bump commonality version - v6.0.4
+ - v13.0.4 Bump MinecraftForge version - v45.0.25
+ - v13.0.3 Update discord changelog webhook to use emojis & hyperlinks
+ - v13.0.2 Optimized imports
+ - v13.0.1 Fix build script typo causing publishing to fail
+ - v13.0.0 Initial port to 1.19.4
+           Bump Forge version - v45.0.1
+           Bump Commonality version - v6.0.0

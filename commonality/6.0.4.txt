@@ -1,0 +1,9 @@
+v6.0
+====
+ - v6.0.4 Bump MinecraftForge version - v45.0.25
+ - v6.0.3 Fix typo in discord changelog notifier
+ - v6.0.2 Update discord changelog webhook to use emojis & hyperlinks
+ - v6.0.1 Optimized imports
+ - v6.0.0 Initial port to 1.19.4
+          Bump forge version - v45.0.1
+

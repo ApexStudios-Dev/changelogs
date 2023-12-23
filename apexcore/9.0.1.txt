@@ -1,0 +1,8 @@
+v9.0
+====
+ - v9.0.1 Fix typo in mods.toml
+ - v9.0.0 Initial port to 1.19.4
+          Bump Forge version - v45.0.1
+          Bump Commonality version - v6.0.0
+          Bump Registrate version - v1.2.13 (local fork)
+

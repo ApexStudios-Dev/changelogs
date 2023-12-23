@@ -1,0 +1,7 @@
+v12.1
+=====
+ - v12.1.4 Add ApexCore version to discord changelog
+ - v12.1.3 Bump changelog tag reference - v12.1
+ - v12.1.2 Stop including ApexCore in production jars
+ - v12.1.1 Add Ukraine translations - @unroman
+ - v12.1.0 Mark mod for public release

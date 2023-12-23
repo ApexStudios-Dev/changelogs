@@ -1,0 +1,215 @@
+v12.0
+=====
+ - v12.0.42 Mark ModPublishPlugin as using latest 0.3 version (0.3.+)
+ - v12.0.41 Fix issue with fabric dependency during publishing
+ - v12.0.40 Fix issue with fabric dependency during publishing
+ - v12.0.39 Fix using incorrect mc version in publishing
+            Change to reference curseforge/modrinth ids rather than slugs during publishing
+ - v12.0.38 Test publishing to dummy projects
+ - v12.0.37 Delete old legacy Jenkinsfile
+ - v12.0.36 Migrate old NeoForge support to being for MinecraftForge
+ - v12.0.35 Initial 1.20.2 bump
+ - v12.0.34 Fix RecipeProvider not using Criterion correctly
+ - v12.0.33 Update to 23w35a
+ - v12.0.32 Add supporter system
+ - v12.0.31 Clean up annotations
+ - v12.0.30 Add early build overlay render
+ - v12.0.29 Update CompositeContainer to also be a composite ContainerData
+ - v12.0.28 Add CompositeContainer which handles merging multiple containers down into 1 larger container
+            Remove InventoryBlockEntityComponent, each component should now implement Container/WorldlyContainer where needed.
+            All indices for component containers are 0-N based within the component itself and anto-magically remapped to 0-<slotsInAllContainers> as needed.
+ - v12.0.27 Add utility method to lookup facing direction
+ - v12.0.26 Fix multi blocks positioning being incorrectly rotated when facing component is applied
+ - v12.0.25 Add helper method to Variant to allow specifying rotations numerically
+            Update blockstate generator to ensure at least 1 of all required types are given
+ - v12.0.24 Update resource generation to gather all generators first, and then only generate resources after all generators have been gathered.
+ - v12.0.23 Remove events as they are all unused and adding unnecessary mixins.
+            Include mixinextras for rest of our mods to easily take advantage of.
+ - v12.0.22 Fix QuadFunction and PentaFunction not being public in PropertyDispatch.
+            Fix PropertyDispatch generateList methods not correctly wanting a List<Variant> return type in mapping function.
+ - v12.0.21 Add utility methods to apply Blocks/BlockStates/BlockEntities as matching ComponentTypes
+ - v12.0.20 Update Jenkinsfile
+ - v12.0.19 Add builders used to register WoodType and BlockSetType entries.
+ - v12.0.18 Fix multi blocks only breaking/destroying blocks when placed/destroyed by players
+ - v12.0.17 Add ability to register custom particles
+ - v12.0.16 Add ability to register commands
+ - v12.0.15 Remove snapshot publishing as it wasn't working as intended
+ - v12.0.14 Split test elements off into separate test mod
+ - v12.0.13 Fix slot backgrounds not rendering when included as dependency in another mods workspace.
+ - v12.0.12 Make SimpleContainerMenuScreen automatically determine menu frame sizes
+            Add methods to override frame and slot background rendering to SimpleContainerMenuScreen
+            Removed unnecessary mixin for slot background rendering
+            Make auto slot binding methods slightly smarter
+ - v12.0.11 Extend menu constructor in MenuProviderBlockComponent to pass along the BlockGetter and BlockPos
+ - v12.0.10 Fix multi block containers not interacting with hoppers and other container handlers correctly
+ - v12.0.9  Add menu provider block component.
+ - v12.0.8  Add more model builders.
+            Update registry builders to use new model builders.
+            Removed old legacy ModelFile class.
+ - v12.0.7  Fix not correctly applying invalid block placement tint to placement renders
+ - v12.0.6  Fix not correctly checking if block rendering should occur in BlockPlacementRenderer
+ - v12.0.5  Allow marking multi-blocks as rendering at origin point only.
+ - v12.0.4  Fix FluidLoggedBlockComponent not working as intended.
+            Rename FluidLoggedBlockComponent to WaterLoggedBlockComponent.
+            Convert to only support Water.
+ - v12.0.3  Fix not actually registering the recipe type, whooops...
+ - v12.0.2  Add methods to modify default and placement directions for HorizontalFacingBlockComponent
+ - v12.0.1  Fix not merging Variants correctly during BlockState generation.
+            Add test horizontal block.
+ - v12.0.0  Port to 23w32a
+
+v11.0
+=====
+ - v11.0.6 Shorten snapshot version number
+ - v11.0.5 Add release & snapshot publications
+ - v11.0.4 Publish snapshot builds to maven
+           Improve Fabric version range
+ - v11.0.3 Fix using incorrect emojis for discord notifier
+ - v11.0.2 Setup Mod publication using Jenkins (#10)
+ - v11.0.1 Improve dynamicness of SimpleContainerMenuScreen by rendering the container background using a NineSliced sprite and generic Slot sprites per slot.
+           This removes the need to make a unique texture for every Menu with slots baked in.
+ - v11.0.0 Initial port to 1.20.2 (23w31a)
+
+v10.0
+=====
+ - v10.0.1 Add missing dependency to Common for mixins.
+ - v10.0.0 Bump mod version - v10.0.0
+
+v9.1
+====
+ - v9.1.82 Fix using incorrect Lists class.
+           `org.apache.commons.compress.utils.Lists` does not exist on Fabric server.
+ - v9.1.81 Add ability to register custom Recipe Serializers & Types.
+ - v9.1.80 Add hooks to register reload listeners.
+ - v9.1.79 Add way to register custom ItemStack Renderers.
+ - v9.1.78 Add hooks to register LayerDefinition entries.
+           Add event invoked when building Item Tooltips.
+ - v9.1.77 Add EventBusHelper class to add missing overloads to IEventBus for optional parameters.
+           Helper variation of this PR
+           https://github.com/neoforged/Bus/pull/8
+ - v9.1.76 Fix crash on Fabric due to registry order being none deterministic.
+ - v9.1.75 Change to have menu hooks construct menu providers as needed, rather than passing them around.
+           Change to return if menu was opened or not from MenuHooks.openMenu
+ - v9.1.74 Add InteractionResultHelper to make returning correct InteractionResult type easier.
+ - v9.1.73 Fix firing resource generators for every mod, rather than the current mod in context.
+           Add Fabric test-data run config.
+           Add 'test_elements' run config property to Forge data.
+ - v9.1.72 Add missing cast method to MenuEntry
+ - v9.1.71 Update RegistryEntry to match Forge DeferredHolder
+ - v9.1.70 Merge pull request #9 from ApexStudios-Dev/1.20/registry-rewrite
+ - v9.1.69 Add ability to generate LootTables during resource generation.
+ - v9.1.68 Add ability to register MenuTypes using AbstractRegistrar.
+ - v9.1.67 Rename EntityType registration classes and method to Entity<>
+ - v9.1.66 Add ability to register BlockEntityTypes using AbstractRegistrar.
+ - v9.1.65 Add ability to register Generic types using AbstractRegistrar.
+ - v9.1.64 Add ability to register Entities using AbstractRegistrar.
+ - v9.1.63 Add ability to register Enchantments using AbstractRegistrar.
+ - v9.1.62 Add ability to register CreativeModeTabs using AbstractRegistrar.
+ - v9.1.61 Add ability to register Blocks using AbstractRegistrar.
+           Add resource generation hooks to AbstractRegistrar.
+ - v9.1.60 Add java-docs to new registry classes.
+ - v9.1.59 Rewrite entire registry system to work more inline with future NeoForge changes, and revolve more around vanilla Holder types.
+           Mentioned NeoForge Registry changes:
+           https://github.com/neoforged/NeoForge/pull/35
+           https://github.com/neoforged/NeoForge/issues/37
+ - v9.1.58 Wipe out old registry system.
+ - v9.1.57 Add pack metadata provider.
+           Fix StackOverflowException in LanguageProvider.
+           Remove old pack.mcmeta file, it is now auto-generated.
+ - v9.1.56 Add global location for all provider types.
+ - v9.1.55 Add advancement and recipe providers.
+ - v9.1.54 Migrate to using ported version of vanilla BlockState generator.
+           Add way to providers to lookup other provider type instances.
+ - v9.1.53 Allow provider types to specify parents that must be run before them.
+ - v9.1.52 Initial work on BlockState generation code.
+           Currently only supports "variants".
+ - v9.1.51 Remove old tag todo marker
+ - v9.1.50 Redirect forge platform to output generated resources into common
+ - v9.1.49 Add tag resource provider.
+ - v9.1.48 Add Language resource provider.
+           Pass along owner id to ApexDataProvider.
+           Auto register event listener for ApexDataProvider on Forge.
+ - v9.1.47 Add helpers into Builder for registering resource gen listeners.
+           Add common model builder helpers.
+           Remove old unwanted test resource gen code.
+ - v9.1.46 Migrate to using callback system for ResourceGeneration.
+ - v9.1.45 Scrap previously implemented resource system for resource-generation.
+           Fabric was swallowing international Exceptions caused by missing resources, making the whole thing useless and pointless.
+ - v9.1.44 Add simple resourcing system for resource generation.
+           Can be used to allow looking up if resource exists or not.
+           Not yet fully implemented.
+           Should be tracking generated resources fine but looking up existing resources may not work on all platforms.
+ - v9.1.43 Add ModelProvider which can be used to generate model files for any platform, during resource-gen.
+           Start initial work on platform-agnostic resource-gen system.
+ - v9.1.42 Add Service Interface used to listen for when ApexCore is done initializing.
+ - v9.1.41 Migrate back over to using ServiceLoaders.
+           Fixes crashes on Fabric related to mod-load-ordering.
+ - v9.1.40 Fix Fabric crash during startup caused by AfterEntityFallOn Event Mixin
+ - v9.1.39 Add event invoked when entities fall on/collide with blocks.
+ - v9.1.38 Add more event types.
+ - v9.1.37 Add missing event invokers
+           Add mixins for Fabric event invokers
+ - v9.1.36 Update Parchment mappings to v2023.07.16
+ - v9.1.35 Fix RegistrarManager registration failing during NeoForged startup, due to concurrency issues
+ - v9.1.34 Fix NPE caused by Fabric mod load ordering not being deterministic
+ - v9.1.33 Add missing toolchain plugin to gradle
+ - v9.1.32 Migrate over to using NeoForge rather than MinecraftForge.
+ - v9.1.31 Make use of Forge Feature system to ensure user is running with java version mod is compiled against
+ - v9.1.30 Cleanup forge run config generation code
+ - v9.1.29 Update to 1.20.1 parchment mappings
+ - v9.1.28 Fix NPE crash with test elements
+ - v9.1.27 Update to 1.20.1  (Allow running on 1.20)
+ - v9.1.26 Fix issues related to publishing remapped 'common' jars
+ - v9.1.25 Fix not including jars during publication
+ - v9.1.24 Push test elements behind JVM flag (apexcore.test_elements.enabled)
+ - v9.1.23 Add BlockBenchModel data provider
+ - v9.1.22 Fix refmap not generating for forge project
+ - v9.1.21 Add mod-menu configuration
+ - v9.1.20 Add gradle task to copy compiled jars to common folder
+ - v9.1.19 Add MultiBlock System
+           Add block placement visualizer
+ - v9.1.18 Add LevelRendererEvents
+ - v9.1.17 Fix nullability issues in getFluidState for Block Components
+ - v9.1.16 Add method to Block Components to lookup if they have finalized registration
+ - v9.1.15 Fix HorizontalFacingBlockComponent using incorrect direction method
+ - v9.1.14 Update to Forge 46.0.13
+ - v9.1.13 Add BlockEntity Components
+           Fix issue with accesswidener
+           (referencing old 1.19.x code)
+           Fix ApexCore bootstrapping too early
+           Fix component blocks defaulting to RenderShape.INVISIBLE
+ - v9.1.12 Fix block components not rebuilding the block state definition
+ - v9.1.11 Add basic block component system
+ - v9.1.10 Add AW/AT lines for custom render types
+ - v9.1.9  Add EnhancedSlot class
+           Add simple container menu classes
+ - v9.1.8  Initial port to 1.20
+ - v9.1.7  Add helper classes
+ - v9.1.6  Add registry system
+           Fix not referencing AT file correctly in build script
+ - v9.1.5  Add common hooks
+           Fix referencing AW file incorrectly in build scripts
+ - v9.1.4  Simplify method names
+ - v9.1.3  Update to forge 45.1.0 RB
+           Remove old quilt properties
+ - v9.1.2  Initial platform setup
+           Fix not correctly including common project onto platform projects
+ - v9.1.1  Initial project setup
+ - v9.1.0  Clean out project - Fresh start
+
+v9.0
+====
+ - v9.0.9 Add task to publish changelog to our updates server
+          Update discord notifier to remove changelog, replaced with link to external site
+ - v9.0.8 Bump commonality version - v6.0.4
+ - v9.0.7 Bump MinecraftForge version - v45.0.25
+ - v9.0.6 Fix not being able to sit in seated blocks
+ - v9.0.5 Remove dependency on JEI as its not currently been updated
+ - v9.0.4 Update discord changelog webhook to use emojis & hyperlinks
+ - v9.0.3 Bump Registrate version - v1.2.14
+ - v9.0.2 Optimized imports
+ - v9.0.1 Fix typo in mods.toml
+ - v9.0.0 Initial port to 1.19.4
+          Bump Forge version - v45.0.1
+          Bump Commonality version - v6.0.0
+          Bump Registrate version - v1.2.13 (local fork)

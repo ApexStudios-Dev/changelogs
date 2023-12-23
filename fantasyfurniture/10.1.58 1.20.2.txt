@@ -1,0 +1,16 @@
+v10.1
+=====
+ - v10.1.6 Add ApexCore version to discord changelog
+ - v10.1.5 Bump changelog tag reference - v10.1
+ - v10.1.4 Fix mixin related errors and crashes
+           Fix MixinFurnaceResultSlot not being injected
+ - v10.1.3 Fix not correctly including Furniture modules
+           Stop including ApexCore in production jars
+ - v10.1.2 Add Ukraine translations - @unroman
+ - v10.1.1 Merge branch '1.20.2/master' into 1.20.2/dev
+ - v10.1.0 Mark mod for public release
+
+v10.1-pre
+=========
+ - v10.1-pre-2 Test publishing to dummy projects
+ - v10.1-pre-1 Delete old legacy Jenkinsfile

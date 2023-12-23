@@ -1,0 +1,15 @@
+v12.1
+=====
+ - v12.1.5 Bump Forge version v48.0.31
+           Require v48.0.4+ (to fix issues with double packet encoding, see forge changelogs)
+           Bump Parchment mappings 2023.10.22
+           Fix broken instanceof check for FakePlayers
+           Caused by MCForge removing their FakePlayer system.
+ - v12.1.4 Comment out NeoGradle plugin, causes issues with newer MCForge versions.
+           Revist Neo support once NeoForge releases publicly.
+ - v12.1.3 Revert "Fix multi blocks positioning being incorrectly rotated when facing component is applied"
+           This reverts commit 7b89ad903fe820e441337cbfc232f03950c9f131.
+ - v12.1.2 Bump changelog tag reference - v12.1
+ - v12.1.1 Fix networking being initialized too late on MCForge
+           Fix early build overlay not rendering on MCForge
+ - v12.1.0 Mark mod for public release

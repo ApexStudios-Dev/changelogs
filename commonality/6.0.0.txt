@@ -1,0 +1,5 @@
+v6.0
+====
+ - v6.0.0 Initial port to 1.19.4
+          Bump forge version - v45.0.1
+

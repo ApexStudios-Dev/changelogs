@@ -1,0 +1,12 @@
+v9.0
+====
+ - v9.0.3  Update discord changelog webhook to use emojis & hyperlinks
+ - v9.0.2  Bump ApexCore version - v9.0.3
+ - v9.0.1  Bump Registrate version - v1.2.14
+ - v9.0.0  Initial port to 1.19.4
+           Bump Forge version - v45.0.1
+           Bump Commonality version - v5.0.0
+           Bump ApexCore version - v9.0.0
+           Bump Registrate version - v1.2.13 (local fork)
+           Optimized imports
+

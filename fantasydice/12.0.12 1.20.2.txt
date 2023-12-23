@@ -1,0 +1,37 @@
+v12.0
+=====
+ - v12.0.12 Fix issues with dependency id references
+ - v12.0.11 Fix not marking ApexCore as embedded dependency
+ - v12.0.10 Test publishing to dummy projects
+ - v12.0.9  Delete old legacy Jenkinsfile
+ - v12.0.8  Migrate old NeoForge support to being for MinecraftForge
+ - v12.0.7  Initial 1.20.2 bump
+ - v12.0.6  Update to 23w35a
+ - v12.0.5  Update Jenkinsfile
+ - v12.0.4  Remove snapshot publishing as it wasn't working as intended
+ - v12.0.3  Cleanup gradle scripts and update to match ApexCore changes
+ - v12.0.2  Fix referencing invalid ApexCore version
+ - v12.0.1  Initial port multi-loader
+ - v12.0.0  Setup basic multi-loader project
+            Wipe out old source files
+
+v9.0
+====
+ - v9.0.11 Add event which is fired when ever a die is rolled.
+ - v9.0.10 Add task to publish changelog to our updates server
+           Update discord notifier to remove changelog, replaced with link to external site
+ - v9.0.9  Bump ApexCore version - v9.0.8
+ - v9.0.8  Bump commonality version - v6.0.4
+ - v9.0.7  Bump MinecraftForge version - v45.0.25
+ - v9.0.6  Bump ApexCore version - v9.0.5
+ - v9.0.5  Fix issues with changelog notifier
+ - v9.0.4  Remove dependency on JEI as its not currently been updated
+ - v9.0.3  Update discord changelog webhook to use emojis & hyperlinks
+ - v9.0.2  Bump ApexCore version - v9.0.3
+ - v9.0.1  Bump Registrate version - v1.2.14
+ - v9.0.0  Initial port to 1.19.4
+           Bump Forge version - v45.0.1
+           Bump Commonality version - v5.0.0
+           Bump ApexCore version - v9.0.0
+           Bump Registrate version - v1.2.13 (local fork)
+           Optimized imports

@@ -1,0 +1,78 @@
+v10.1
+=====
+ - v10.1.0 Mark mod for public release
+
+v9.0
+====
+ - v9.0.53 Mark ModPublishPlugin as using latest 0.3 version (0.3.+)
+ - v9.0.52 Merge publishing scripts down to 1 per platform rather than 1 per module.
+           Include module & base jars as additional files during mod publishing.
+ - v9.0.51 Fix broken publishing scripts
+ - v9.0.50 Migrate old NeoForge support to being for MinecraftForge
+ - v9.0.49 Initial 1.20.2 bump
+ - v9.0.48 Update to 23w35a
+ - v9.0.47 Add creative mode tab icons
+ - v9.0.46 Add nordic oven block
+ - v9.0.45 Update to match recent ApexCore inventory changes.
+ - v9.0.44 Add nordic bed blocks
+           Update to use new HorizontalFacing utility method
+ - v9.0.43 Update to use new BlockState generation changes in ApexCore
+ - v9.0.42 Update to use mixin extras.
+           Update to use fabrics builtin PathNode registry rather than our own mixin
+ - v9.0.41 Add nordic table block
+ - v9.0.40 Add nordic door blocks
+ - v9.0.39 Add nordic wood type
+ - v9.0.38 Update Jenkinsfile
+ - v9.0.37 Change seats to be component based rather than tag based.
+           Add nordic chair block.
+           Add SeatBlock interface used to override seating positions on a per block type basis.
+           Add corrected translations for nordic blocks.
+ - v9.0.36 Add nordic light blocks
+ - v9.0.35 Remove snapshot publishing as it wasn't working as intended
+ - v9.0.34 Remove snapshot publishing as it wasn't working as intended
+ - v9.0.33 Cleanup gradle scripts and update to match ApexCore changes
+ - v9.0.32 Update to match ApexCore changes
+ - v9.0.31 Add nordic counter block
+           Extend connection system to support inner and outer corner types, similar to stair block
+ - v9.0.30 Add nordic wardrobe blocks
+ - v9.0.29 Add nordic dresser block
+           Fix medium container menu slots being positioned incorrectly
+ - v9.0.28 Add nordic chest block
+ - v9.0.27 Add nordic bookshelf block
+           Fix large container menu slots being positioned incorrectly
+ - v9.0.26 Fix bench not having placement visualizer block tag
+           Fix blocks not having correct render types
+ - v9.0.25 Add nordic shelf block.
+           Extend ConnectionBlockComponent to support a variety of ConnectionType combinations.
+ - v9.0.24 Fix not saving/loading seated positions from nbt
+ - v9.0.23 Add Nordic desk left and right blocks
+ - v9.0.22 Update to match new ApexCore changes
+ - v9.0.21 Add nordic bench block
+ - v9.0.20 Mark fox as sitting when seated in seats
+ - v9.0.19 Add nordic lockbox block
+ - v9.0.18 Add small, medium and large container blocks
+ - v9.0.17 Add nordic drawer block.
+ - v9.0.16 Add small, medium and large container types.
+ - v9.0.15 Update to match recent ApexCore changes
+ - v9.0.14 Add nordic painting blocks
+           Fix wool and carpet blocks being tagged as sittable
+ - v9.0.13 Add nordic stool and cushion blocks
+ - v9.0.12 Add nordic carpet block
+ - v9.0.11 Add nordic wool block
+           Add creative mode tabs
+ - v9.0.10 Fix generating loottable for non-living seat-entity
+ - v9.0.9  Fix not including ApexCore
+ - v9.0.8  Add nordic sofa block
+ - v9.0.7  Fix not including module projects at runtime correctly
+ - v9.0.6  Fix inconsistencies with seating system
+           Allow interacting with seated entities to stand them up
+           Add block tag used to mark sittable blocks
+ - v9.0.5  Add initial seating system
+ - v9.0.4  Add FurnitureStation block and recipe system
+ - v9.0.3  Fix typo in dependency declaration
+           Fix Jenkins not generating resources for other modules
+ - v9.0.2  Set up multi-module workspace
+ - v9.0.1  Initial multi-loader project setup
+           Clear out old legacy project
+ - v9.0.0  Add task to publish changelog to our updates server
+           Update discord notifier to remove changelog, replaced with link to external site

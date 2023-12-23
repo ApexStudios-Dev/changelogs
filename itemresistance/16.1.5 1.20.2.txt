@@ -1,0 +1,8 @@
+v16.1
+=====
+ - v16.1.5 Add ApexCore version to discord changelog
+ - v16.1.4 Bump changelog tag reference - v16.1
+ - v16.1.3 Stop including ApexCore in production jars
+ - v16.1.2 Add Ukraine translations - @unroman
+ - v16.1.1 Bump ApexCore version
+ - v16.1.0 Mark mod for public release

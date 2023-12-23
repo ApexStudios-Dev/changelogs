@@ -1,0 +1,6 @@
+v12.1
+=====
+ - v12.1.2 Bump changelog tag reference - v12.1
+ - v12.1.1 Fix networking being initialized too late on MCForge
+           Fix early build overlay not rendering on MCForge
+ - v12.1.0 Mark mod for public release

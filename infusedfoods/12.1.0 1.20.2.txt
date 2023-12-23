@@ -1,0 +1,57 @@
+v12.1
+=====
+ - v12.1.0 Mark mod for public release
+
+v12.0
+=====
+ - v12.0.13 Mark ModPublishPlugin as using latest 0.3 version (0.3.+)
+ - v12.0.12 Fix issues with dependency id references
+ - v12.0.11 Fix not marking ApexCore as embedded dependency
+ - v12.0.10 Test publishing to dummy projects
+ - v12.0.9  Delete old legacy Jenkinsfile
+ - v12.0.8  Migrate old NeoForge support to being for MinecraftForge
+ - v12.0.7  Initial 1.20.2 bump
+            Add MixinExtras dependency
+ - v12.0.6  Update to 23w35a
+ - v12.0.5  Update to match recent ApexCore inventory changes.
+ - v12.0.4  Update to match ApexCore changes.
+ - v12.0.3  Update Jenkinsfile
+ - v12.0.2  Remove snapshot publishing as it wasn't working as intended
+ - v12.0.1  Cleanup gradle scripts and update to match ApexCore changes
+ - v12.0.0  Port to 23w32a
+
+v11.0
+=====
+ - v11.0.3 Add release & snapshot publications
+           Improve Fabric version range
+           Update to use snapshot variant of ApexCore
+ - v11.0.2 Setup Mod publication using Jenkins
+ - v11.0.1 Update to use sprite based rendering for infusion station gui.
+           Fix InfusionStation running if fuel somehow goes negative.
+ - v11.0.0 Initial port to 1.20.2 (23w31a)
+
+v10.0
+=====
+ - v10.0.2 Add missing dependency to Common for mixins.
+           Remove FabricLoader dependency from Common.
+ - v10.0.1 Initial port to multi-loader.
+ - v10.0.0 Clear out old project sources and migrate over to multi-loader project.
+
+v9.0
+====
+ - v9.0.9 Add task to publish changelog to our updates server
+          Update discord notifier to remove changelog, replaced with link to external site
+ - v9.0.8 Bump ApexCore version - v9.0.8
+ - v9.0.7 Bump commonality version - v6.0.4
+ - v9.0.6 Bump MinecraftForge version - v45.0.25
+ - v9.0.5 Bump ApexCore version - v9.0.5
+ - v9.0.4 Remove dependency on JEI as its not currently been updated
+ - v9.0.3 Update discord changelog webhook to use emojis & hyperlinks
+ - v9.0.2 Bump ApexCore version - v9.0.3
+ - v9.0.1 Bump Registrate version - v1.2.14
+ - v9.0.0 Initial port to 1.19.4
+          Bump Forge version - v45.0.1
+          Bump Commonality version - v5.0.0
+          Bump ApexCore version - v9.0.0
+          Bump Registrate version - v1.2.13 (local fork)
+          Optimized imports
